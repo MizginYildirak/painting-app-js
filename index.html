@@ -5,4 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>painting-app</title>
-  <link href="https://fonts.googlea
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="700"></canvas>
+  <div class="toolbox">
+    <button id="decrease" class="button">-</button>
+    <span id="size">10</span>
+    <button id="increase" class="button">+</button>
+    <input type="color" id="color">
+    <button id="clear" class="button">Clear</button>
+
+    <div id="rectMode" class=" selected">Rectangle</div>
+    <div id="circleMode" class="">Circle</div>
+    <button id="penMode">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M14.69 3.98l5.33 5.33-10.71 10.71-5.33-5.33zm7.85 3.72l-2.12-2.12c-.39-.39-1.02-.39-1.41 0l-1.88 1.88 3.53 3.53 1.88-1.88c.39-.39.39-1.02 0-1.41zm-16.19 9.79l3.53 3.53-5.66 2.12 2.12-5.66z" />
+      </svg>
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
