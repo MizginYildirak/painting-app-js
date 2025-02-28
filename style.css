@@ -11,4 +11,104 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
- 
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+canvas {
+  border: 2px solid #000;
+  display: block;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.toolbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+#size {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+#rectMode {
+  width: 100px;
+  height: 45px;
+  border: 2px solid #4caf50;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f0f9f0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#circleMode {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f9f0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#rectMode.selected,
+#circleMode.selected {
+  border-color: #4caf50;
+  background-color: #4caf50;
+  color: white;
+}
+
+#rectMode:hover,
+#circleMode:hover {
+  background-color: #333;
+  color: white;
+}
+
+input[type="color"] {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="color"]:hover {
+  border-color: #aaa;
+}
